@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:src="@drawable/portfolio"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELLO THERE, \nWELCOME BACK"
+        android:fontFamily="@font/bungee"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in to continue"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="7dp"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="35dp"
+       android:layout_marginBottom="20dp">
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/email"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Email"
+           android:layout_marginStart="5dp"
+           android:layout_marginEnd="5dp"
+           style="@style/MaterialAlertDialog.Material3.Title.Icon.CenterStacked">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="text"
+               />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/password"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="5dp"
+           android:layout_marginEnd="5dp"
+           android:hint="Password"
+           app:passwordToggleEnabled="true"
+           style="@style/MaterialAlertDialog.Material3.Title.Icon.CenterStacked">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="textPassword" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <TextView
+           android:id="@+id/forgotPassword"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="250dp"
+           android:text="FORGOT PASSWORD?"
+           android:textSize="15dp"
+           android:textStyle="bold" />
+
+   </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/loggin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        app:cardBackgroundColor="#0A0B0B"
+        android:layout_margin="10dp"
+        app:strokeWidth="0dp"
+        android:elevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="GO"
+                android:textSize="23dp"
+                android:fontFamily="@font/bungee"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:text="NEW USER? SIGN UP!"
+        android:textSize="15dp" />
+
+
+
+
+</LinearLayout>
